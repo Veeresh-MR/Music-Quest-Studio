@@ -1,0 +1,26 @@
+"""The 22 references used by the report and the paper (each checked against the publisher, arXiv or an official copy)."""
+
+REFS = {
+    "hermann": 'T. Hermann, "Taxonomy and definitions for sonification and auditory display," in <i>Proc. 14th Int. Conf. on Auditory Display (ICAD 2008)</i>, Paris, France, 2008. [Online]. Available: https://www.icad.org/Proceedings/2008/Hermann2008.pdf',
+    "fft": 'J. W. Cooley and J. W. Tukey, "An algorithm for the machine calculation of complex Fourier series," <i>Mathematics of Computation</i>, vol. 19, no. 90, pp. 297&ndash;301, 1965, doi: 10.1090/S0025-5718-1965-0178586-1.',
+    "copet": 'J. Copet, F. Kreuk, I. Gat, T. Remez, D. Kant, G. Synnaeve, Y. Adi, and A. D&eacute;fossez, "Simple and controllable music generation," in <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, 2023, arXiv:2306.05284.',
+    "musiclm": 'A. Agostinelli <i>et al.</i>, "MusicLM: Generating music from text," arXiv:2301.11325, 2023.',
+    "heikkila": 'V.-M. Heikkil&auml;, "Discovering novel computer music techniques by exploring the space of short computer programs," arXiv:1112.1368, 2011.',
+    "mansur": 'D. L. Mansur, M. M. Blattner, and K. I. Joy, "Sound graphs: A numerical data analysis method for the blind," <i>Journal of Medical Systems</i>, vol. 9, pp. 163&ndash;174, 1985, doi: 10.1007/BF00996201.',
+    "grond": 'F. Grond and T. Hermann, "Singing function: Exploring auditory graphs with a vowel based sonification," <i>Journal on Multimodal User Interfaces</i>, vol. 5, no. 3&ndash;4, pp. 87&ndash;95, 2012, doi: 10.1007/s12193-011-0068-2.',
+    "dobosz": 'K. Dobosz, D. Hanak, and P. Kud&#322;acik, "Adaptive sonification of mathematical function graphs," <i>Applied Sciences</i>, vol. 16, no. 14, Art. no. 7137, 2026, doi: 10.3390/app16147137.',
+    "kramer": 'G. Kramer, B. Walker, T. Bonebright, P. Cook, J. Flowers, N. Miner, and J. Neuhoff, <i>Sonification Report: Status of the Field and Research Agenda</i>. International Community for Auditory Display (ICAD), 1999.',
+    "handbook": 'T. Hermann, A. Hunt, and J. G. Neuhoff, Eds., <i>The Sonification Handbook</i>. Berlin, Germany: Logos Publishing House, 2011. [Online]. Available: https://sonification.de/handbook/',
+    "mathews": 'M. V. Mathews, "The digital computer as a musical instrument," <i>Science</i>, vol. 142, no. 3592, pp. 553&ndash;557, 1963, doi: 10.1126/science.142.3592.553.',
+    "shannon": 'C. E. Shannon, "Communication in the presence of noise," <i>Proceedings of the IRE</i>, vol. 37, no. 1, pp. 10&ndash;21, 1949, doi: 10.1109/JRPROC.1949.232969.',
+    "nyquist": 'H. Nyquist, "Certain topics in telegraph transmission theory," <i>Transactions of the AIEE</i>, vol. 47, no. 2, pp. 617&ndash;644, 1928, doi: 10.1109/T-AIEE.1928.5055024.',
+    "stilson": 'T. Stilson and J. O. Smith, "Alias-free digital synthesis of classic analog waveforms," in <i>Proc. Int. Computer Music Conf. (ICMC)</i>, 1996, pp. 332&ndash;335.',
+    "chowning": 'J. M. Chowning, "The synthesis of complex audio spectra by means of frequency modulation," <i>Journal of the Audio Engineering Society</i>, vol. 21, no. 7, pp. 526&ndash;534, 1973.',
+    "brown": 'T. B. Brown <i>et al.</i>, "Language models are few-shot learners," in <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, vol. 33, 2020, pp. 1877&ndash;1901.',
+    "gemini": 'Gemini Team, Google, "Gemini: A family of highly capable multimodal models," arXiv:2312.11805, 2023.',
+    "selfrefine": 'A. Madaan <i>et al.</i>, "Self-Refine: Iterative refinement with self-feedback," arXiv:2303.17651, 2023.',
+    "walker": 'B. N. Walker and G. Kramer, "Mappings and metaphors in auditory displays: An experimental assessment," <i>ACM Transactions on Applied Perception</i>, vol. 2, no. 4, pp. 407&ndash;412, 2005, doi: 10.1145/1101530.1101534.',
+    "flowers": 'J. H. Flowers, "Thirteen years of reflection on auditory graphing: Promises, pitfalls, and potential new directions," in <i>Proc. 11th Int. Conf. on Auditory Display (ICAD 2005)</i>, Limerick, Ireland, 2005.',
+    "fan": 'D. Fan, W. Smith, T. Fujioka, C. Chafe, S. O\'Modhrain, D. Deutsch, and S. Follmer, "Perceiving slope and acceleration: Evidence for variable tempo sampling in pitch-based sonification of functions," arXiv:2508.06872, 2025.',
+    "itu": 'International Telecommunication Union, "Method for the subjective assessment of intermediate quality level of audio systems," Recommendation ITU-R BS.1534-3, Oct. 2015.',
+}

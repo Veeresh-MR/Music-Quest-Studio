@@ -1,0 +1,130 @@
+{
+ "version": 1,
+ "name": "Phonk, but it's math",
+ "bpm": 130,
+ "channels": [
+  {
+   "id": "chmvy2q9y6xfndv",
+   "name": "Kick",
+   "formula": "v * sin(tau*(45*t + 4*(1 - exp(-30*t)))) * exp(-6*t)",
+   "mode": "oneshot",
+   "length": 0.6,
+   "release": 0.1,
+   "color": "#e8743b",
+   "volume": 0.8,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmvy2q9y626b9w",
+   "name": "Clap",
+   "formula": "v * 0.6*noise(t) * (exp(-90*t) + exp(-90*max(0, t-0.011))*step(t-0.011) + exp(-14*max(0, t-0.022))*step(t-0.022))",
+   "mode": "oneshot",
+   "length": 0.4,
+   "release": 0.1,
+   "color": "#e0b84a",
+   "volume": 0.8,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmvy2q9y6w2lho",
+   "name": "Closed Hat",
+   "formula": "v * (0.09*(sqr(317*t) + sqr(421*t) + sqr(543*t) + sqr(612*t) + sqr(812*t) + sqr(1019*t)) + 0.3*noise(t)) * exp(-55*t)",
+   "mode": "oneshot",
+   "length": 0.12,
+   "release": 0.1,
+   "color": "#9fcf6a",
+   "volume": 0.8,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmvy2q9y61ku8s",
+   "name": "808 Glide",
+   "formula": "v * 0.85*tanh(1.6*sin(tau*(f*t + 1.5*f*(1 - exp(-25*t))/25))) * exp(-1.2*t)",
+   "mode": "note",
+   "length": 1,
+   "release": 0.12,
+   "color": "#64b5f6",
+   "volume": 0.8,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmvy2q9y7ft6zw",
+   "name": "Piano",
+   "formula": "v * 0.42*(sin(tau*f*t) + 0.5*sin(2*tau*f*t)*exp(-2*t) + 0.25*sin(3*tau*f*t)*exp(-4*t) + 0.12*sin(4*tau*f*t)*exp(-6*t)) * exp(-2.2*t) * (1 - exp(-400*t))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.25,
+   "color": "#7bd389",
+   "volume": 0.8,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  }
+ ],
+ "patterns": [
+  {
+   "id": "ptmvy2q9y7vs35q",
+   "name": "Pattern 1",
+   "bars": 1,
+   "color": "#5aa9e6",
+   "steps": {},
+   "notes": {}
+  }
+ ],
+ "playlist": [],
+ "master": {
+  "volume": 0.85,
+  "reverb": 0.15,
+  "limiter": true
+ },
+ "graph": {
+  "bars": 8,
+  "bpm": 140,
+  "layers": [
+   {
+    "id": "gl0",
+    "name": "Kick",
+    "formula": "if(0.45 - frac(x), 2.6*exp(-14*frac(x)) - 1.4, nan)",
+    "key": 45,
+    "volume": 0.55,
+    "wave": "warm",
+    "mute": false
+   },
+   {
+    "id": "gl1",
+    "name": "808",
+    "formula": "if(0.9 - frac(x/2), if(0.5 - mod(floor(x/4), 4), 0, if(1.5 - mod(floor(x/4), 4), -4, if(2.5 - mod(floor(x/4), 4), -2, -5)))/12 + 0.35*exp(-6*frac(x/2)), nan)",
+    "key": 33,
+    "volume": 0.5,
+    "wave": "warm",
+    "mute": false
+   },
+   {
+    "id": "gl2",
+    "name": "Cowbell",
+    "formula": "if(0.6 - frac(2*x), round(12*mod(3*floor(2*x), 7)/7)/12 + if(0.5 - mod(floor(x/4), 4), 0, if(1.5 - mod(floor(x/4), 4), -4, if(2.5 - mod(floor(x/4), 4), -2, -5)))/12, nan)",
+    "key": 69,
+    "volume": 0.2,
+    "wave": "square",
+    "mute": false
+   },
+   {
+    "id": "gl3",
+    "name": "Tick",
+    "formula": "if(0.12 - frac(x + 0.5), 3.5 - 6*frac(x + 0.5), nan)",
+    "key": 69,
+    "volume": 0.12,
+    "wave": "sine",
+    "mute": false
+   }
+  ]
+ }
+}

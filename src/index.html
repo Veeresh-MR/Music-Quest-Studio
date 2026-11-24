@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' ipc: http://ipc.localhost https: http://localhost:* http://127.0.0.1:*" />
+  <title>Quest Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand" title="Quest Studio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7.5" /><path d="M16.5 16.5 L21 21" /><path d="M7 11 Q9 6 11 11 T15 11" /></svg>
+        <span>QUEST</span>
+      </div>
+      <nav class="menus" id="menus"></nav>
+      <div class="sep"></div>
+      <div class="transport" id="transport"></div>
+      <div class="sep"></div>
+      <div class="pattern-picker" id="pattern-picker"></div>
+      <div class="spacer"></div>
+      <canvas id="scope" width="160" height="30" title="Master output"></canvas>
+      <div class="master-meter" id="master-meter" title="Master level"><i></i><i></i></div>
+      <div id="master-volume"></div>
+      <button class="btn export-btn" id="btn-export" title="Export the song as WAV or MP4 (Ctrl+R)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 19h14" /></svg>
+        Export
+      </button>
+      <button class="icon-btn" id="btn-ai-settings" title="AI settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" /></svg>
+      </button>
+    </header>
+
+    <aside id="browser"></aside>
+
+    <main id="workspace">
+      <div id="tabs" role="tablist"></div>
+      <section id="views"></section>
+    </main>
+
+    <footer id="statusbar">
+      <span id="status-hint">Ready</span>
+      <span class="spacer"></span>
+      <span id="status-info"></span>
+    </footer>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1613 @@
+{
+ "version": 1,
+ "name": "Gejje Naada (devotional demo)",
+ "bpm": 88,
+ "channels": [
+  {
+   "id": "chmuy7jdc3dcfg2",
+   "name": "Tanpura",
+   "formula": "v * 0.3*tanh(1.6*(sin(tau*f*t) + 0.6*sin(2*tau*f*t + 0.4*sin(tau*0.7*t)) + 0.35*sin(3*tau*f*t))) * exp(-0.6*t) * (1 - exp(-60*t))",
+   "mode": "note",
+   "length": 1,
+   "release": 2,
+   "color": "#c9a227",
+   "volume": 0.55,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4lalnl",
+   "name": "Gejje Bells",
+   "formula": "v * (0.11*(sin(tau*3150*t) + sin(tau*4420*t) + sin(tau*5310*t) + sin(tau*6870*t))*(exp(-22*t) + 0.7*step(t-0.035)*exp(-22*max(0, t-0.035))) + 0.12*noise(t)*exp(-45*t))",
+   "mode": "oneshot",
+   "length": 0.5,
+   "release": 0.1,
+   "color": "#ffd166",
+   "volume": 0.45,
+   "pan": 0.3,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4kfyvu",
+   "name": "Temple Bell",
+   "formula": "v * 0.4*(sin(tau*440*t) + 0.6*sin(tau*1102*t)*exp(-1.5*t) + 0.4*sin(tau*1726*t)*exp(-2*t) + 0.25*sin(tau*2611*t)*exp(-3*t)) * exp(-0.9*t)",
+   "mode": "oneshot",
+   "length": 4,
+   "release": 0.1,
+   "color": "#ffd166",
+   "volume": 0.4,
+   "pan": -0.25,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4nffwt",
+   "name": "Dhol",
+   "formula": "v * (0.75*sin(tau*(62*t + 2.2*(1 - exp(-28*t))))*exp(-5*t) + 0.25*noise(t)*exp(-70*t))",
+   "mode": "oneshot",
+   "length": 0.7,
+   "release": 0.1,
+   "color": "#e8743b",
+   "volume": 0.85,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4l88lm",
+   "name": "Tabla Na",
+   "formula": "v * ((0.45*sin(tau*510*t) + 0.25*sin(tau*1020*t)*exp(-6*t) + 0.15*sin(tau*1530*t)*exp(-10*t))*exp(-8*t) + 0.15*noise(t)*exp(-90*t))",
+   "mode": "oneshot",
+   "length": 0.4,
+   "release": 0.1,
+   "color": "#e0b84a",
+   "volume": 0.55,
+   "pan": -0.2,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4nh7xe",
+   "name": "Tabla Bayan",
+   "formula": "v * 0.8*sin(tau*(80*t + 12*t^2))*exp(-3.5*t)*(1 - exp(-300*t))",
+   "mode": "oneshot",
+   "length": 0.8,
+   "release": 0.1,
+   "color": "#e0b84a",
+   "volume": 0.7,
+   "pan": -0.1,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4tcgqn",
+   "name": "Flute",
+   "formula": "v * (1 - exp(-12*t)) * (0.42*sin(tau*f*t + 0.8*sin(tau*5*t)) + 0.08*sin(2*tau*f*t) + 0.03*noise(t))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.15,
+   "color": "#f06292",
+   "volume": 0.7,
+   "pan": 0.15,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc40tqor",
+   "name": "Shehnai",
+   "formula": "v * (1 - exp(-15*t)) * 0.4*tanh(3*sin(tau*f*t + 0.5*(1 - exp(-2*t))*sin(tau*5.5*t)))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.2,
+   "color": "#f06292",
+   "volume": 0.55,
+   "pan": -0.15,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4xuf7m",
+   "name": "Sitar",
+   "formula": "v * 0.4*tanh(2.4*sin(tau*f*t + (1.2 + 0.6*sin(tau*3*t))*exp(-1.5*t)*sin(2*tau*f*t))) * exp(-1.3*t) * (1 - exp(-600*t))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.3,
+   "color": "#ffb74d",
+   "volume": 0.65,
+   "pan": -0.2,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4m20x4",
+   "name": "Strings",
+   "formula": "v * 0.16*(saw(0.997*f*t) + saw(1.003*f*t) + 0.6*saw(2.001*f*t)) * (1 - exp(-4*t))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.6,
+   "color": "#ba68c8",
+   "volume": 0.4,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4dbqfa",
+   "name": "Warm Pad",
+   "formula": "v * 0.3*(sin(tau*f*t) + sin(tau*1.004*f*t) + 0.4*sin(tau*2*f*t)) * (1 - exp(-3*t))",
+   "mode": "note",
+   "length": 1,
+   "release": 0.8,
+   "color": "#ba68c8",
+   "volume": 0.35,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4uji5s",
+   "name": "808 Glide",
+   "formula": "v * 0.85*tanh(1.6*sin(tau*(f*t + 1.5*f*(1 - exp(-25*t))/25))) * exp(-1.2*t)",
+   "mode": "note",
+   "length": 1,
+   "release": 0.12,
+   "color": "#64b5f6",
+   "volume": 0.55,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  },
+  {
+   "id": "chmuy7jdc4pjv6f",
+   "name": "Riser",
+   "formula": "(0.2*noise(t) + 0.3*sin(tau*(200*t + 150*t^2))) * (t/2)^2",
+   "mode": "oneshot",
+   "length": 2,
+   "release": 0.1,
+   "color": "#90a4ae",
+   "volume": 0.45,
+   "pan": 0,
+   "mute": false,
+   "solo": false
+  }
+ ],
+ "patterns": [
+  {
+   "id": "pt1",
+   "name": "Intro - Alaap",
+   "bars": 4,
+   "color": "#c9a227",
+   "steps": {
+    "chmuy7jdc4lalnl": [
+     0,
+     8,
+     24,
+     32,
+     40,
+     56
+    ],
+    "chmuy7jdc4kfyvu": [
+     0,
+     32
+    ]
+   },
+   "notes": {
+    "chmuy7jdc3dcfg2": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 4,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 8,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 20,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 40,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 52,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 56,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4dbqfa": [
+     {
+      "step": 0,
+      "len": 32,
+      "key": 50,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 55,
+      "vel": 0.6
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 57,
+      "vel": 0.6
+     }
+    ],
+    "chmuy7jdc4tcgqn": [
+     {
+      "step": 4,
+      "len": 8,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 20,
+      "len": 8,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 36,
+      "len": 8,
+      "key": 63,
+      "vel": 0.8
+     },
+     {
+      "step": 44,
+      "len": 12,
+      "key": 62,
+      "vel": 0.8
+     },
+     {
+      "step": 56,
+      "len": 4,
+      "key": 61,
+      "vel": 0.8
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 62,
+      "vel": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "pt2",
+   "name": "Groove - Sitar",
+   "bars": 4,
+   "color": "#e8743b",
+   "steps": {
+    "chmuy7jdc4nffwt": [
+     0,
+     6,
+     10,
+     16,
+     22,
+     26,
+     32,
+     38,
+     42,
+     48,
+     54,
+     58
+    ],
+    "chmuy7jdc4l88lm": [
+     2,
+     4,
+     7,
+     12,
+     15,
+     18,
+     20,
+     23,
+     28,
+     31,
+     34,
+     36,
+     39,
+     44,
+     47,
+     50,
+     52,
+     55,
+     60,
+     63
+    ],
+    "chmuy7jdc4nh7xe": [
+     8,
+     24,
+     27,
+     40,
+     56,
+     59
+    ],
+    "chmuy7jdc4lalnl": [
+     4,
+     12,
+     14,
+     20,
+     28,
+     30,
+     36,
+     44,
+     46,
+     52,
+     60,
+     62
+    ]
+   },
+   "notes": {
+    "chmuy7jdc3dcfg2": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 4,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 8,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 20,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 40,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 52,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 56,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4xuf7m": [
+     {
+      "step": 0,
+      "len": 2,
+      "key": 74,
+      "vel": 0.8
+     },
+     {
+      "step": 2,
+      "len": 2,
+      "key": 73,
+      "vel": 0.8
+     },
+     {
+      "step": 4,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 6,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 10,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 18,
+      "len": 2,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 20,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 22,
+      "len": 4,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 26,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 28,
+      "len": 2,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 30,
+      "len": 2,
+      "key": 63,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 2,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 34,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 40,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 42,
+      "len": 2,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 2,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 50,
+      "len": 2,
+      "key": 63,
+      "vel": 0.8
+     },
+     {
+      "step": 52,
+      "len": 8,
+      "key": 62,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4dbqfa": [
+     {
+      "step": 0,
+      "len": 16,
+      "key": 50,
+      "vel": 0.5
+     },
+     {
+      "step": 16,
+      "len": 16,
+      "key": 39,
+      "vel": 0.5
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 43,
+      "vel": 0.5
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 45,
+      "vel": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "pt3",
+   "name": "Build - Riser",
+   "bars": 4,
+   "color": "#ba68c8",
+   "steps": {
+    "chmuy7jdc4nffwt": [
+     0,
+     16,
+     32,
+     40,
+     48,
+     52,
+     56,
+     58,
+     60,
+     61,
+     62,
+     63
+    ],
+    "chmuy7jdc4lalnl": [
+     0,
+     4,
+     8,
+     12,
+     16,
+     20,
+     24,
+     28,
+     32,
+     34,
+     36,
+     38,
+     40,
+     42,
+     44,
+     46,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63
+    ],
+    "chmuy7jdc4l88lm": [
+     4,
+     12,
+     20,
+     28,
+     36,
+     44,
+     52,
+     60
+    ],
+    "chmuy7jdc4pjv6f": [
+     52
+    ]
+   },
+   "notes": {
+    "chmuy7jdc3dcfg2": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 4,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 8,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 20,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 40,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 52,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 56,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4m20x4": [
+     {
+      "step": 0,
+      "len": 16,
+      "key": 62,
+      "vel": 0.5
+     },
+     {
+      "step": 16,
+      "len": 16,
+      "key": 63,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 67,
+      "vel": 0.7
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 69,
+      "vel": 0.85
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 61,
+      "vel": 0.7
+     }
+    ],
+    "chmuy7jdc40tqor": [
+     {
+      "step": 32,
+      "len": 6,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 38,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 40,
+      "len": 8,
+      "key": 73,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 74,
+      "vel": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "pt4",
+   "name": "Chorus - Devi",
+   "bars": 4,
+   "color": "#f29b38",
+   "steps": {
+    "chmuy7jdc4nffwt": [
+     0,
+     6,
+     10,
+     14,
+     16,
+     22,
+     26,
+     30,
+     32,
+     38,
+     42,
+     46,
+     48,
+     54,
+     58,
+     62
+    ],
+    "chmuy7jdc4l88lm": [
+     2,
+     4,
+     7,
+     12,
+     15,
+     18,
+     20,
+     23,
+     28,
+     31,
+     34,
+     36,
+     39,
+     44,
+     47,
+     50,
+     52,
+     55,
+     60,
+     63
+    ],
+    "chmuy7jdc4nh7xe": [
+     8,
+     11,
+     24,
+     27,
+     40,
+     43,
+     56,
+     59
+    ],
+    "chmuy7jdc4lalnl": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20,
+     22,
+     24,
+     26,
+     28,
+     30,
+     32,
+     34,
+     36,
+     38,
+     40,
+     42,
+     44,
+     46,
+     48,
+     50,
+     52,
+     54,
+     56,
+     58,
+     60,
+     62
+    ],
+    "chmuy7jdc4kfyvu": [
+     0
+    ]
+   },
+   "notes": {
+    "chmuy7jdc3dcfg2": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 4,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 8,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 20,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 40,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 52,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 56,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4tcgqn": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 4,
+      "len": 6,
+      "key": 74,
+      "vel": 0.8
+     },
+     {
+      "step": 10,
+      "len": 2,
+      "key": 73,
+      "vel": 0.8
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 20,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 22,
+      "len": 2,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 40,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 42,
+      "len": 2,
+      "key": 73,
+      "vel": 0.8
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 74,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 2,
+      "key": 73,
+      "vel": 0.8
+     },
+     {
+      "step": 50,
+      "len": 2,
+      "key": 70,
+      "vel": 0.8
+     },
+     {
+      "step": 52,
+      "len": 4,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 56,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 58,
+      "len": 2,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 60,
+      "len": 4,
+      "key": 62,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc40tqor": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 62,
+      "vel": 0.6
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 66,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 67,
+      "vel": 0.6
+     },
+     {
+      "step": 48,
+      "len": 4,
+      "key": 69,
+      "vel": 0.6
+     }
+    ],
+    "chmuy7jdc4m20x4": [
+     {
+      "step": 0,
+      "len": 16,
+      "key": 62,
+      "vel": 0.6
+     },
+     {
+      "step": 0,
+      "len": 16,
+      "key": 66,
+      "vel": 0.6
+     },
+     {
+      "step": 0,
+      "len": 16,
+      "key": 69,
+      "vel": 0.6
+     },
+     {
+      "step": 16,
+      "len": 16,
+      "key": 63,
+      "vel": 0.6
+     },
+     {
+      "step": 16,
+      "len": 16,
+      "key": 67,
+      "vel": 0.6
+     },
+     {
+      "step": 16,
+      "len": 16,
+      "key": 70,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 55,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 58,
+      "vel": 0.6
+     },
+     {
+      "step": 32,
+      "len": 16,
+      "key": 62,
+      "vel": 0.6
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 57,
+      "vel": 0.6
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 61,
+      "vel": 0.6
+     },
+     {
+      "step": 48,
+      "len": 16,
+      "key": 69,
+      "vel": 0.6
+     }
+    ],
+    "chmuy7jdc4uji5s": [
+     {
+      "step": 0,
+      "len": 6,
+      "key": 38,
+      "vel": 0.9
+     },
+     {
+      "step": 10,
+      "len": 4,
+      "key": 38,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 6,
+      "key": 39,
+      "vel": 0.9
+     },
+     {
+      "step": 26,
+      "len": 4,
+      "key": 39,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 6,
+      "key": 43,
+      "vel": 0.9
+     },
+     {
+      "step": 42,
+      "len": 4,
+      "key": 43,
+      "vel": 0.8
+     },
+     {
+      "step": 48,
+      "len": 6,
+      "key": 45,
+      "vel": 0.9
+     },
+     {
+      "step": 58,
+      "len": 4,
+      "key": 45,
+      "vel": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "id": "pt5",
+   "name": "Outro - Aarti",
+   "bars": 4,
+   "color": "#6fd6c6",
+   "steps": {
+    "chmuy7jdc4kfyvu": [
+     0,
+     32
+    ],
+    "chmuy7jdc4lalnl": [
+     0,
+     16,
+     32,
+     48
+    ]
+   },
+   "notes": {
+    "chmuy7jdc3dcfg2": [
+     {
+      "step": 0,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 4,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 8,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 12,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 20,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 28,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     },
+     {
+      "step": 32,
+      "len": 4,
+      "key": 57,
+      "vel": 0.7
+     },
+     {
+      "step": 36,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 40,
+      "len": 4,
+      "key": 62,
+      "vel": 0.65
+     },
+     {
+      "step": 44,
+      "len": 4,
+      "key": 50,
+      "vel": 0.8
+     }
+    ],
+    "chmuy7jdc4dbqfa": [
+     {
+      "step": 0,
+      "len": 64,
+      "key": 50,
+      "vel": 0.5
+     }
+    ],
+    "chmuy7jdc4tcgqn": [
+     {
+      "step": 0,
+      "len": 6,
+      "key": 69,
+      "vel": 0.8
+     },
+     {
+      "step": 6,
+      "len": 2,
+      "key": 67,
+      "vel": 0.8
+     },
+     {
+      "step": 8,
+      "len": 8,
+      "key": 66,
+      "vel": 0.8
+     },
+     {
+      "step": 16,
+      "len": 6,
+      "key": 63,
+      "vel": 0.8
+     },
+     {
+      "step": 22,
+      "len": 2,
+      "key": 62,
+      "vel": 0.8
+     },
+     {
+      "step": 24,
+      "len": 4,
+      "key": 61,
+      "vel": 0.8
+     },
+     {
+      "step": 28,
+      "len": 20,
+      "key": 62,
+      "vel": 0.8
+     }
+    ]
+   }
+  }
+ ],
+ "playlist": [
+  {
+   "id": "cl0",
+   "pattern": "pt1",
+   "track": 0,
+   "bar": 0
+  },
+  {
+   "id": "cl1",
+   "pattern": "pt2",
+   "track": 0,
+   "bar": 4
+  },
+  {
+   "id": "cl2",
+   "pattern": "pt2",
+   "track": 0,
+   "bar": 8
+  },
+  {
+   "id": "cl3",
+   "pattern": "pt3",
+   "track": 0,
+   "bar": 12
+  },
+  {
+   "id": "cl4",
+   "pattern": "pt4",
+   "track": 0,
+   "bar": 16
+  },
+  {
+   "id": "cl5",
+   "pattern": "pt4",
+   "track": 0,
+   "bar": 20
+  },
+  {
+   "id": "cl6",
+   "pattern": "pt2",
+   "track": 0,
+   "bar": 24
+  },
+  {
+   "id": "cl7",
+   "pattern": "pt3",
+   "track": 0,
+   "bar": 28
+  },
+  {
+   "id": "cl8",
+   "pattern": "pt4",
+   "track": 0,
+   "bar": 32
+  },
+  {
+   "id": "cl9",
+   "pattern": "pt5",
+   "track": 0,
+   "bar": 36
+  }
+ ],
+ "master": {
+  "volume": 0.85,
+  "reverb": 0.3,
+  "limiter": true
+ }
+}
